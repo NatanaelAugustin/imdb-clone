@@ -7,6 +7,8 @@
 }
 
 .headerLeft, .headerRight {
+    display: flex;
+    align-items: center;
 
 }
 
@@ -16,9 +18,14 @@ a > span{
     cursor: pointer;
     color: white;
 }
+a > span:hover{
+    color: red;
+}
 
-.img {
-
-    height: 200px;
-    width: 200px;
+.header__icon {
+    width: 80px;
+    cursor: pointer;
+}
+.user__avatar {
+    font-size: 2rem;
 }

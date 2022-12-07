@@ -2,20 +2,17 @@ import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
+
 const Header = () => {
   return (
     <div className="header">
       <div className="headerLeft">
         <Link to="/">
-          <img
-            className="header__icon"
-            src="imdb-clone\public\IMDB_Logo_2016.png"
-            alt=""
-          />{" "}
+          <img className="header__icon" src="images/IMDB_Logo_2016.png" alt="IMDB-logo" />
         </Link>
-        <Link to="/movies/popular">Popular</Link>
-        <Link to="/movies/toprated">Top Rated</Link>
-        <Link to="/movies/upcoming">Upcoming </Link>
+        <Link to="/movies/popular" style={{textDecoration: "none"}}><span>Popular</span></Link>
+        <Link to="/movies/toprated" style={{textDecoration: "none"}}><span>Top Rated</span></Link>
+        <Link to="/movies/upcoming" style={{textDecoration: "none"}}><span>Upcoming</span> </Link>
       </div>
     </div>
   );
