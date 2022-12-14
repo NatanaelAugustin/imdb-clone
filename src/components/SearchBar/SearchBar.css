@@ -1,0 +1,37 @@
+.searchInputs {
+    display: flex;
+}
+
+.search input {
+    background-color: white;
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 10rem;
+
+}
+
+.searchIcon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    
+}   
+
+
+input:focus {
+    outline: none;
+
+}
+
+.searchIcon svg {
+    font-size: 35px;
+    cursor: pointer;
+}
+
