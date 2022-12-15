@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./SearchBar.css"
-import ResultCard from "../searchResults/ResultCard";
+import { MovieContext } from "../../Contexts/movieContext";
 //import SearchIcon from "@material-ui/icons/Search";
 // import { useParams } from "react-router-dom";
 
@@ -39,12 +39,23 @@ import ResultCard from "../searchResults/ResultCard";
 
 const SearchBar = () => {
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
+  const [, setMoviesList] = useContext(MovieContext)
+
+  const carousel = document.querySelector('.poster');
 
   const onChange = (e) => {
     e.preventDefault();
-
     setQuery(e.target.value);
+    if (!carousel.classList.contains("hidden")) {
+      carousel.classList.add("hidden") 
+    }
+    
+
+    if(e.target.value.length === 0){
+      carousel.classList.remove("hidden")
+      return;
+    }
+    
 
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=f12ad4185cf17d80af9c1ff6f4a7372b&language=en-US&page=1&include_adult=false&query=${e.target.value}`
@@ -52,9 +63,9 @@ const SearchBar = () => {
      .then((res) => res.json())
      .then(data => {
       if(!data.errors) {
-        setResults(data.results)
+        setMoviesList(data.results)
       } else {
-        setResults([])
+        setMoviesList([])
       }
     });
   };
@@ -66,7 +77,7 @@ const SearchBar = () => {
         <div className="searchIcon"></div>
       </div>
       <div className="dataResult">
-        {results.length > 0 && (
+        {/* {results.length > 0 && (
           <ul>
             {results.map((movie) => (
               <li key={movie.id}>
@@ -74,7 +85,7 @@ const SearchBar = () => {
               </li>
             ))}
           </ul>
-        )}
+        )} */}
       </div>
     </div>
   );

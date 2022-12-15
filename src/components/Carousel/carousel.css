@@ -1,3 +1,4 @@
+
 .posterImage {
     height: 600px;
 }
@@ -53,4 +54,8 @@
     text-align: left;
     width: 50%;
 
+}
+
+.hidden {
+    display: none;
 }
