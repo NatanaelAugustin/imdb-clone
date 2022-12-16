@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./card.css";
 import { Link } from "react-router-dom";
-import { MovieContext } from "../../Contexts/movieContext";
+import { MovieContext } from "../../contexts/movieContext";
 
 const Card = ({ movie }) => {
   const [, , movieHistory, setMovieHistory] = useContext(MovieContext);
@@ -24,16 +24,12 @@ const Card = ({ movie }) => {
   return (
     <>
       {
-        <Link
-          onClick={handleClick}
-          to={`/movie/${movie.id}`}
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <div className="cards">
+        <Link onClick={handleClick} to={`/movie/${movie.id}`} style={{ textDecoration: "none", color: "white" }}>
+          <div className="cards" >
             <img
               className="cards__img"
               src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`}
-              alt=""
+              alt={"current movie"}
             />
             <div className="cards__overlay">
               <div className="card__title">{movie ? movie.original_title : ""}</div>

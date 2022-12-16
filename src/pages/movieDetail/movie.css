@@ -111,7 +111,7 @@
 }
 
 .movie__homeButton {
-    background-color:rgb(255, 0, 0);
+    background-color:yellow;
     
 }
 
@@ -129,17 +129,4 @@
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 4rem;
-}
-
-
-.movie__productionComapany {
-    width: 200px;
-    margin: 2rem;
-}
-
-.productionCompanyImage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
