@@ -9,7 +9,7 @@ const Movie = () => {
   const { id } = useParams();
 
   const getData = useCallback(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=f12ad4185cf17d80af9c1ff6f4a7372b`)
+    fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_API_KEY}`)
       .then((res) => res.json())
       .then((data) => setMovie(data));
   }, [id])

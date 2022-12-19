@@ -1,9 +1,9 @@
 import { Divider } from "@mui/material";
 import React from "react";
 import { useContext } from "react";
-import { MovieContext } from "../../contexts/movieContext";
+import { MovieContext } from "../contexts/movieContext";
 import MovieList from "../movieList/movieList";
-import "./recentlyViewed.css"
+import "./recentlyViewed.css";
 
 function RecentlyViewed() {
   const [, , movieHistory] = useContext(MovieContext);

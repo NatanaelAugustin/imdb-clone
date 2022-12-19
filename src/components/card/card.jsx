@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./card.css";
 import { Link } from "react-router-dom";
-import { MovieContext } from "../../contexts/movieContext";
+import { MovieContext } from "../contexts/movieContext";
 
 const Card = ({ movie }) => {
   const [, , movieHistory, setMovieHistory] = useContext(MovieContext);
@@ -25,7 +25,7 @@ const Card = ({ movie }) => {
     <>
       {
         <Link onClick={handleClick} to={`/movie/${movie.id}`} style={{ textDecoration: "none", color: "white" }}>
-          <div className="cards" >
+          <div className="cards">
             <img
               className="cards__img"
               src={`https://image.tmdb.org/t/p/original${movie ? movie.poster_path : ""}`}

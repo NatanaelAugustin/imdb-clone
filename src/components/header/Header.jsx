@@ -20,7 +20,7 @@ const Header = () => {
           <span>Upcoming</span>{" "}
         </Link>
         <SearchBar placeholder="Search Movies" />
-        <div>By Natanael Augustin</div>
+        <div className="myName">By Natanael Augustin</div>
       </div>
     </div>
   );

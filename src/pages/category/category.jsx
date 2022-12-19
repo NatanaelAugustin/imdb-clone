@@ -9,7 +9,7 @@ const Category = () => {
   const { type } = useParams();
 
   const getData = useCallback(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=f12ad4185cf17d80af9c1ff6f4a7372b`)
+    fetch(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=${process.env.REACT_APP_API_KEY}`)
       .then((res) => res.json())
       .then((data) => setMovies(data.results));
   }, [type]);

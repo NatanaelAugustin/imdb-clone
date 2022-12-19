@@ -13,6 +13,10 @@
 
 }
 
+.myName {
+    padding-left: 2rem;
+}
+
 a > span{
     margin: 2rem;
     font-size: 1.3rem;
