@@ -3,19 +3,19 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(22, 21, 21);
-    width: 100%;
     padding: 1rem;
+
+    
 }
 
-.headerLeft {
+.header-container {
     display: flex;
     align-items: center;
+    
+   
 
 }
 
-.myName {
-    padding-left: 2rem;
-}
 
 a > span{
     margin: 2rem;
@@ -24,7 +24,7 @@ a > span{
     color: white;
 }
 a > span:hover{
-    color: yellow;
+    color: gray
 }
 
 .header__icon {

@@ -6,7 +6,7 @@ import SearchBar from "../searchBar/SearchBar";
 const Header = () => {
   return (
     <div className="header">
-      <div className="headerLeft">
+      <div className="header-container">
         <Link to="/">
           <img className="header__icon" src="/images/IMDB_Logo_2016.png" alt="IMDB-logo" />
         </Link>
@@ -20,7 +20,7 @@ const Header = () => {
           <span>Upcoming</span>{" "}
         </Link>
         <SearchBar placeholder="Search Movies" />
-        <div className="myName">By Natanael Augustin</div>
+        
       </div>
     </div>
   );

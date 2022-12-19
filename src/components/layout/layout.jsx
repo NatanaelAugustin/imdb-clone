@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import RecentlyViewed from "../recentlyViewed/recentlyViewed";
 
@@ -8,6 +9,7 @@ function Layout({ children }) {
       <Header />
       {children}
       <RecentlyViewed />
+      <Footer />
     </>
   );
 }
