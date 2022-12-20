@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "./SearchBar.css";
 import { MovieContext } from "../contexts/movieContext";
 
+
 const SearchBar = () => {
   const [query, setQuery] = useState("");
   const [, setMoviesList] = useContext(MovieContext);
@@ -36,7 +37,7 @@ const SearchBar = () => {
   return (
     <div className="search">
       <div className="searchInputs">
-        <input type="text" placeholder="Search Movies" value={query} onChange={onChange} />
+        <input type="text" placeholder="Search Movies" value={query} onChange={onChange}  />
       </div>
     </div>
   );
