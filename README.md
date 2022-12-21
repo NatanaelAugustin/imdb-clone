@@ -1,6 +1,13 @@
-Inlämingsarbete för kurs Javascript Backend av Natanael Augustin
-Kursinnehåll : IMDB-klon
-Lärare : Alexander Andersson
+Imdb-clone by Natanael Augustin
 
-imdb_clone repo
-https://63a0823e80da9700083e11d2--superlative-bubblegum-5d48a4.netlify.app/
+Preview :
+https://natanael-augustin-imdb-clone.netlify.app
+
+Description
+School-project involing building a imdb-clone in react. 
+Fetching data from MDB-API and manipulate it and display a fully functional webb interface. 
+
+Teacher: Alexander Andersson 
+School: EC-utbildning, Webbutveckling inom .NET, Göteborg
+
+
