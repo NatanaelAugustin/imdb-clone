@@ -9,6 +9,7 @@
     "eslint-plugin-react-hooks": "^5.0.0-next-996e4c0d5-20221212",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.7.1",
     "react-loading-skeleton": "^3.1.0",
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.4.4",

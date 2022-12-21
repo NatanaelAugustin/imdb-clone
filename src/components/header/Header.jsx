@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import SearchBar from "../searchBar/SearchBar";
+import {IoMenu} from "react-icons/io5"
 
 
 
@@ -26,7 +27,7 @@ const Header = () => {
         </div>
         <button onClick={() => setShowLinks(!showLinks)}>
         {""}
-        
+        <IoMenu />
         </button>
       </div>
       <div className="header-container-right">{ <SearchBar placeholder="Search Movies" /> }</div>
