@@ -5,7 +5,6 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@material-ui/icons": "^4.11.3",
     "@mui/material": "^5.11.0",
     "eslint-plugin-react-hooks": "^5.0.0-next-996e4c0d5-20221212",
     "react": "^17.0.2",
