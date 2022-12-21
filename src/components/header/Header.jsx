@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import SearchBar from "../searchBar/SearchBar";
-import ReorderIcon from '@material-ui/icons/Reorder'
+
 
 
 const Header = () => {
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <button onClick={() => setShowLinks(!showLinks)}>
         {""}
-        <ReorderIcon />
+        
         </button>
       </div>
       <div className="header-container-right">{ <SearchBar placeholder="Search Movies" /> }</div>
