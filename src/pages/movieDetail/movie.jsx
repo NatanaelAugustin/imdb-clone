@@ -77,7 +77,7 @@ const Movie = () => {
             <a href={currentMovieDetail.homepage} target="_blank" style={{ textDecoration: "none" }} rel="noreferrer">
               <p>
                 <span className="movie__homeButton movie__Button">
-                  Homepage <i className="newTab fas fa-external-link-alt"></i>
+                  Homepage 
                 </span>
               </p>
             </a>
@@ -91,7 +91,7 @@ const Movie = () => {
             >
               <p>
                 <span className="movie__imdbButton movie__Button">
-                  IMDb<i className="newTab fas fa-external-link-alt"></i>
+                  IMDb
                 </span>
               </p>
             </a>

@@ -25,6 +25,9 @@
     margin-left: 15px; 
 
 }
+.header .header-container-left .links a:hover {
+    color: grey;
+}
 .header .header-container-left button {
     display: none;
     margin-left: 20px;
